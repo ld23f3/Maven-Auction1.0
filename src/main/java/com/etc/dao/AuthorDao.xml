@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 映射文件 有一个 namespace -->
+<mapper namespace="com.etc.dao.AuthorDao">
+	<select id="queryAuthors" resultType="com.etc.entity.Author">
+		select * from author
+	</select>
+	
+</mapper>
