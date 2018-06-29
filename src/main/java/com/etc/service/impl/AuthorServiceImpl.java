@@ -15,20 +15,24 @@ public class AuthorServiceImpl implements AuthorService {
 	@Resource(name="authorDao")
 	AuthorDao ad;
 
+	@Override
 	public List<Author> getAuthors() {
 		return ad.queryAuthors();
 	}
 
+	@Override
 	public boolean addAuthor(Author au) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
+	@Override
 	public boolean delAuthorById(int id) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
+	@Override
 	public boolean updAuthorById(Author au) {
 		// TODO Auto-generated method stub
 		return false;
